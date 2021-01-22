@@ -6,7 +6,7 @@ import android.content.SharedPreferences;
 class BlogPreferences {
     public static final String KEY_LOGIN_STATE = "key_login_state";
 
-    private SharedPreferences preferences;
+    private final SharedPreferences preferences;
 
     BlogPreferences(Context context) {
         preferences = context.getSharedPreferences(KEY_LOGIN_STATE, Context.MODE_PRIVATE);
